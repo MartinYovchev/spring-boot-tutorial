@@ -18,8 +18,13 @@ public class SoftwareEngineerController {
                         List.of("react", "nextjs", "tailwind")
                 ),
                 new SoftwareEngineer(
-                        1,
+                        2,
                         "Ivan",
+                        List.of("spring", "java")
+                ),
+                new SoftwareEngineer(
+                        3,
+                        "Gosho",
                         List.of("spring", "java")
                 )
         );
