@@ -1,11 +1,17 @@
 package com.example.springboottutorial;
 
-import java.util.Arrays;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.util.List;
 import java.util.Objects;
 
+// Not a good practice. This way we are exposing a whole table of entities
+// We should do it trough dtos, so we are able to limit the visible output
+@Entity
 public class SoftwareEngineer {
 
+    @Id
     private Integer id;
     private String name;
     private List<String> techStack;
