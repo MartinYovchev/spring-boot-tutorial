@@ -3,6 +3,7 @@ package com.example.springboottutorial;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class SoftwareEngineerService {
@@ -18,5 +19,10 @@ public class SoftwareEngineerService {
 
     public void addSoftwareEngineer(SoftwareEngineer softwareEngineer) {
         softwareEngineerRepository.save(softwareEngineer);
+    }
+
+    public SoftwareEngineer getSoftwareEngineerById(UUID id) {
+        return softwareEngineerRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Software engineer not found: " + id));
     }
 }

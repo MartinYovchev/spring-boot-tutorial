@@ -12,3 +12,6 @@ Content-Type: application/json
   "name": "Martin",
   "techStack": ["react", "nextjs", "tailwind"]
 }
+
+###
+GET localhost:8080/api/v1/software-engineers/6008b8cf-0609-4e74-aafb-f5a776ee719e
